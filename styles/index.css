@@ -2,3 +2,8 @@ body{
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
+
+.coment-content{
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+}

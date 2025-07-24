@@ -1,7 +1,7 @@
 .navbar {
     margin: 2px;
     border-radius: 2px;
-    background-image: linear-gradient(to right,#BF40BF, #800080);
+    background-image: linear-gradient(to right,#800080, #BF40BF );
 }
 .navbar__logo{
     width: 150px;
