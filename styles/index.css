@@ -1,9 +1,29 @@
 body{
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    background-color: #fffcf6 !important;
+    font-family: "Montserrat", sans-serif !important;
 }
-
-.coment-content{
+.content{
+    display: grid;
+    grid-template-areas: 
+        "prod info";
+    grid-template-columns: 
+        1fr 1fr;
+}
+.content__info{
+    grid-area: info;
     border: 1px solid rgb(0, 0, 0);
     margin: 10px;
+}
+.content__prod{
+    grid-area: prod;
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 90%; */
+    margin: 10px;
+}
+.distribution-prod{
+    /* display: flex; */
+}
+.card{
+    margin: 5px;
 }
