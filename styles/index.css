@@ -8,22 +8,56 @@ body{
     grid-template-areas: 
         "prod info";
     grid-template-columns: 
-        1fr 1fr;
+        3fr 1fr;
+    align-items: start; /* para evitar estiramiento desigual */
 }
 .content__info{
     grid-area: info;
-    border: 1px solid rgb(0, 0, 0);
     margin: 10px;
 }
 .content__prod{
     grid-area: prod;
-    border: 1px solid rgb(0, 0, 0);
-    /* width: 90%; */
     margin: 10px;
-}
-.distribution-prod{
-    /* display: flex; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 10px;
 }
 .card{
     margin: 5px;
+    text-align: center;
+    border: none !important;
+    background-color: rgb(252, 244, 230) !important;
+}
+.card__img{
+    width: 99%;
+    height: 15rem;
+    margin: 2px;
+    border-radius: 5px;
+}
+.info-order{
+    display: flex;
+    flex-direction: column;
+}
+.info-order__text{
+    margin: 10px;
+}
+
+@media (min-width: 380px) and (max-width: 780px){
+    .content{
+        grid-template-areas: 
+            "prod"
+            "info";
+        grid-template-columns: 
+            5fr;
+    }
+    .content__prod{
+        justify-items: center;
+    }
+    .card{
+        width: 18rem !important;
+    }
+    .card__img{
+        height: 18rem;
+    }
 }

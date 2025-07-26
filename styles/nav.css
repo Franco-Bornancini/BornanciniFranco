@@ -9,14 +9,24 @@
     border-radius: 100px;
     width: 90px;
 }
+.container-fluid{
+    justify-content: flex-start !important;
+}
+
 .nav-link{
     color: #000000 !important;
     font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width:360px) and (max-width: 768px) {
+    .container-fluid{
+        flex-direction: column;
+    }
     .navbar__logo{
         width: 90px;
         height: 50%;
+    }
+    .navbarNav{
+        text-align: center;
     }
 }
