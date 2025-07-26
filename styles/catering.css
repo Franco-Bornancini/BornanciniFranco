@@ -24,6 +24,7 @@ body{
     padding: 0px;
     border-radius: 100rem;
 }
+
 @media (min-width: 380px) and (max-width: 780px){
     .catering-content__info{
         flex-direction: column;

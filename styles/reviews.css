@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    background-color: #fffcf6 !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.reviews-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(0,0,0,);
+}
+.card{
+    border: none !important;
+    background-color: #f8e9cc !important;
+}
+.cards__img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (min-width: 380px) and (max-width: 780px){
+    .card{
+        margin: 10px;
+        text-align: center;
+    }
+    .cards__img{
+        width: 50% !important;
+        height: 100% !important;
+    }
+}
