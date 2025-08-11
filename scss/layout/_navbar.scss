@@ -1,0 +1,23 @@
+.navbar {
+    margin: 2px;
+    border-radius: 2px;
+    background-color:    #f5f1f1 !important;
+    
+    .container-fluid{
+        justify-content: flex-start !important;
+        
+        .navbar__logo{
+            width: 150px;
+            height: 50%;
+            border-radius: 100px;
+            width: 90px;
+        }
+
+        .nav-link{
+            color: #000000 !important;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+    }
+    
+}

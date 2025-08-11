@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  background-color: #fffcf6 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+@media (min-width: 348px) and (max-width: 760px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+  .container-fluid .navbar__logo {
+    width: 90px;
+    height: 50%;
+  }
+  .container-fluid .navbarNav {
+    text-align: center;
+  }
+  .content-index {
+    grid-template-areas: "prod" "info" !important;
+    grid-template-columns: 5fr !important;
+  }
+  .content-index .content__info {
+    grid-area: info;
+    margin: 10px;
+  }
+  .content-index .content__prod {
+    grid-area: prod;
+    justify-items: center;
+  }
+  .content-index .content__prod .card {
+    width: 18rem !important;
+  }
+  .content-index .content__prod .card .card__img {
+    height: 18rem;
+  }
+  .catering-content__info {
+    flex-direction: column !important;
+  }
+  .catering-content__info .content-info {
+    text-align: center;
+    padding: 10px !important;
+  }
+  .catering-content__info .content-img {
+    width: 100% !important;
+    height: 80% !important;
+    margin: 5px;
+  }
+  .presale-content__info {
+    flex-direction: column;
+  }
+  .presale-content__info .content-info {
+    width: 100% !important;
+  }
+  .presale-content__info .content-info .info__data img {
+    width: 10% !important;
+    height: 10% !important;
+  }
+  .presale-content__info .form-row {
+    flex-direction: column;
+  }
+  .card {
+    margin: 10px !important;
+    text-align: center;
+  }
+  .card .cards__img {
+    width: 50% !important;
+    height: 100% !important;
+  }
+}
+@media (min-width: 761px) and (max-width: 990px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+  .container-fluid .navbar__logo {
+    width: 90px;
+    height: 50%;
+  }
+  .container-fluid .navbarNav {
+    text-align: center;
+  }
+  .presale-content__info {
+    flex-direction: column;
+  }
+  .presale-content__info .content-info {
+    width: 100% !important;
+  }
+  .presale-content__info .content-info .info__data img {
+    width: 5% !important;
+    height: 5% !important;
+  }
+}
+.navbar {
+  margin: 2px;
+  border-radius: 2px;
+  background-color: #f5f1f1 !important;
+}
+.navbar .container-fluid {
+  justify-content: flex-start !important;
+}
+.navbar .container-fluid .navbar__logo {
+  width: 150px;
+  height: 50%;
+  border-radius: 100px;
+  width: 90px;
+}
+.navbar .container-fluid .nav-link {
+  color: #000000 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background-color: #f5f1f1 !important;
+  color: rgb(0, 0, 0);
+  padding: 50px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.footer-container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+.footer-container p {
+  padding: 15px 10px 0px 0px;
+}
+
+.content-index {
+  display: grid;
+  grid-template-areas: "prod info";
+  grid-template-columns: 3fr 1fr;
+  align-items: start;
+}
+.content-index .content__info {
+  grid-area: info;
+  margin: 10px;
+}
+.content-index .content__info .info-order {
+  display: flex;
+  flex-direction: column;
+}
+.content-index .content__info .info-order .info-order__text {
+  margin: 10px;
+}
+.content-index .content__prod {
+  grid-area: prod;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 10px;
+}
+.content-index .content__prod .card {
+  margin: 5px;
+  text-align: center;
+  border: none !important;
+  background-color: rgb(252, 244, 230) !important;
+}
+.content-index .content__prod .card .card__img {
+  width: 99%;
+  height: 15rem;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.contact-content .contact-content__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.contact-content .contact-content__data .img-contact {
+  width: 30%;
+  height: 80%;
+  border-radius: 100px;
+}
+.contact-content .contact-content__data .info__data {
+  display: flex;
+  align-items: center;
+}
+.contact-content .contact-content__data .info__data p {
+  padding: 15px 0px 0px 10px;
+}
+
+.reviews-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews-content .reviews-content__cards {
+  flex-direction: row;
+}
+.reviews-content .reviews-content__cards .card {
+  border: none !important;
+  background-color: #f8e9cc !important;
+}
+.reviews-content .reviews-content__cards .card .cards__img {
+  width: 100%;
+  height: 100%;
+}
+
+.presale-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.presale-content .presale-content__info {
+  display: flex;
+  margin: 10px;
+}
+.presale-content .presale-content__info .content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin: 40px auto;
+  padding: 20px;
+}
+.presale-content .presale-content__info .content-info .info__data {
+  display: flex;
+  align-items: center;
+}
+.presale-content .presale-content__info .content-info .info__data img {
+  width: 8%;
+  height: 60%;
+}
+.presale-content .presale-content__info .content-info .info__data p {
+  padding: 15px 0px 0px 10px;
+}
+.presale-content .presale-content__info .form-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+.presale-content .presale-content__info .form-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+.presale-content .presale-content__info .form-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.presale-content .presale-content__info .form-section .contact-form .form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.presale-content .presale-content__info .form-section .contact-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.presale-content .presale-content__info .form-section .contact-form .form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.presale-content .presale-content__info .form-section .contact-form .form-group input,
+.presale-content .presale-content__info .form-section .contact-form .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.presale-content .presale-content__info .form-section .btn-enviar {
+  align-self: flex-start;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.catering-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.catering-content .catering-content__info {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.catering-content .catering-content__info .content-info {
+  text-align: center;
+  padding: 100px;
+}
+.catering-content .catering-content__info .content-img {
+  width: 30rem;
+  height: auto;
+  padding: 0px;
+  border-radius: 100rem;
+}
+
+/*# sourceMappingURL=origin.css.map */

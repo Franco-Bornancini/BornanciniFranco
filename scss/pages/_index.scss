@@ -1,0 +1,48 @@
+@use '../layout/navbar';
+@use '../layout/footer';
+
+.content-index{
+    display: grid;
+    grid-template-areas: 
+        "prod info";
+    grid-template-columns: 
+        3fr 1fr;
+    align-items: start;
+
+    .content__info{
+        grid-area: info;
+        margin: 10px;
+
+        .info-order{
+            display: flex;
+            flex-direction: column;
+
+            .info-order__text{
+                margin: 10px;
+            }
+        }
+    }
+
+    .content__prod{
+        grid-area: prod;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 10px;
+
+        .card{
+            margin: 5px;
+            text-align: center;
+            border: none !important;
+            background-color: rgb(252, 244, 230) !important;
+
+            .card__img{
+                width: 99%;
+                height: 15rem;
+                margin: 2px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}

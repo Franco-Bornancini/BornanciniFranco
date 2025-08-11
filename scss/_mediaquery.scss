@@ -1,0 +1,119 @@
+@media (min-width: 348px) and (max-width: 760px){
+    //Navbar
+    .container-fluid{
+        flex-direction: column;
+
+        .navbar__logo{
+            width: 90px;
+            height: 50%;
+        }
+
+        .navbarNav{
+            text-align: center;
+        }
+    }
+    
+    // Index
+    .content-index{
+        grid-template-areas: 
+            "prod"
+            "info" !important;
+        grid-template-columns: 
+            5fr !important;
+
+
+        .content__info{
+            grid-area: info;
+            margin: 10px;
+        }
+        .content__prod{
+            grid-area: prod;
+            justify-items: center;
+
+            .card{
+                width: 18rem !important;
+                
+                .card__img{
+                    height: 18rem;
+                }
+            }
+        }
+    }
+
+    // Catering
+    .catering-content__info{
+        flex-direction: column !important;
+
+        .content-info{
+            text-align: center;
+            padding: 10px !important;
+        }
+
+        .content-img{
+            width: 100% !important;
+            height: 80% !important;
+            margin: 5px;
+        }
+
+    }
+
+    // Presale
+    .presale-content__info{
+        flex-direction: column;
+
+        .content-info{
+            width: 100% !important;
+            .info__data{
+                img{
+                    width: 10% !important;
+                    height: 10% !important;
+                }
+            }
+        }
+        .form-row {
+            flex-direction: column;
+        }
+    }
+    
+    // Review
+    .card{
+        margin: 10px !important;
+        text-align: center;
+
+        .cards__img{
+            width: 50% !important;
+            height: 100% !important;
+        }
+    }
+    
+}
+@media (min-width: 761px) and (max-width: 990px){
+    //Navbar
+    .container-fluid{
+        flex-direction: column;
+
+        .navbar__logo{
+            width: 90px;
+            height: 50%;
+        }
+
+        .navbarNav{
+            text-align: center;
+        }
+    }
+
+    // Presale
+    .presale-content__info{
+        flex-direction: column;
+
+        .content-info{
+            width: 100% !important;
+            .info__data{
+                img{
+                    width: 5% !important;
+                    height: 5% !important;
+                }
+            }
+        }
+    }
+}
