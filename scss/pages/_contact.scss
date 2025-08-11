@@ -21,11 +21,19 @@
         }
 
         .info__data{
-            display: flex;
-            align-items: center;
+            // display: flex;
+            // align-items: center;
             
+            img{
+                    width: 5%;
+                    height: 60%;
+            }
+
             p{
                 padding: 15px 0px 0px 10px;
+            }
+            .contact-wsp{
+                padding: 10px;
             }
         }
 

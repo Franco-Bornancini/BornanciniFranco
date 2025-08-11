@@ -57,6 +57,19 @@
 
     }
 
+    //Contact
+    .contact-content{
+        .contact-content__data{
+            .info__data{
+                img{
+                        width: 10% !important;
+                        height: 10% !important;
+                    }
+            }
+        }
+    }
+    
+
     // Presale
     .presale-content__info{
         flex-direction: column;

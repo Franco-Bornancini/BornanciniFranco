@@ -45,6 +45,10 @@ body {
     height: 80% !important;
     margin: 5px;
   }
+  .contact-content .contact-content__data .info__data img {
+    width: 10% !important;
+    height: 10% !important;
+  }
   .presale-content__info {
     flex-direction: column;
   }
@@ -184,12 +188,15 @@ body {
   height: 80%;
   border-radius: 100px;
 }
-.contact-content .contact-content__data .info__data {
-  display: flex;
-  align-items: center;
+.contact-content .contact-content__data .info__data img {
+  width: 5%;
+  height: 60%;
 }
 .contact-content .contact-content__data .info__data p {
   padding: 15px 0px 0px 10px;
+}
+.contact-content .contact-content__data .info__data .contact-wsp {
+  padding: 10px;
 }
 
 .reviews-content {
