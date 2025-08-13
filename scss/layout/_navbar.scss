@@ -1,10 +1,11 @@
 .navbar {
     margin: 2px;
     border-radius: 2px;
+    height: 100%;
     background-color:    #f5f1f1 !important;
     
     .container-fluid{
-        justify-content: flex-start !important;
+        justify-content: flex-start;
         
         .navbar__logo{
             width: 150px;
@@ -13,10 +14,20 @@
             width: 90px;
         }
 
-        .nav-link{
-            color: #000000 !important;
-            font-family: "Montserrat", sans-serif;
+        .nav-item{
+            border-bottom: 2px solid transparent;
+            transition: border-color 3s ease; /* o all si querés animar más cosas */
+
+            &:hover {
+                border-bottom-color: black; /* o el color que quieras */
+            }
+            .nav-link{
+                color: #000000 !important;
+                font-family: "Montserrat", sans-serif;
+            }
         }
+
+        
         
     }
     

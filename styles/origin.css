@@ -1,19 +1,35 @@
+@charset "UTF-8";
 body {
   margin: 0;
   background-color: #fffcf6 !important;
   font-family: "Montserrat", sans-serif !important;
 }
 
-@media (min-width: 348px) and (max-width: 760px) {
+@media (max-width: 760px) {
   .container-fluid {
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .container-fluid .navbar__logo {
     width: 90px;
     height: 50%;
   }
   .container-fluid .navbarNav {
+    height: 0;
+    overflow: hidden;
     text-align: center;
+    width: 100%;
+    transition: all 0.3s;
+  }
+  .container-fluid .navbarNav .navbar-nav {
+    height: 100%;
+  }
+  .container-fluid .input-check {
+    display: none;
+  }
+  .container-fluid .input-check:checked + .navbarNav {
+    height: 100%;
   }
   .content-index {
     grid-template-areas: "prod" "info" !important;
@@ -71,9 +87,12 @@ body {
     height: 100% !important;
   }
 }
-@media (min-width: 761px) and (max-width: 990px) {
+@media (min-width: 761px) and (max-width: 1079px) {
   .container-fluid {
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .container-fluid .label_hamb, .container-fluid .input-check {
+    display: none;
   }
   .container-fluid .navbar__logo {
     width: 90px;
@@ -81,6 +100,12 @@ body {
   }
   .container-fluid .navbarNav {
     text-align: center;
+  }
+  .container-fluid .navbarNav .navbar-nav {
+    flex-direction: row;
+  }
+  .container-fluid .navbarNav .navbar-nav .nav-item {
+    padding: 10px;
   }
   .presale-content__info {
     flex-direction: column;
@@ -93,13 +118,22 @@ body {
     height: 5% !important;
   }
 }
+@media (min-width: 1080px) {
+  .container-fluid {
+    flex-direction: row;
+  }
+  .container-fluid .label_hamb, .container-fluid .input-check {
+    display: none;
+  }
+}
 .navbar {
   margin: 2px;
   border-radius: 2px;
+  height: 100%;
   background-color: #f5f1f1 !important;
 }
 .navbar .container-fluid {
-  justify-content: flex-start !important;
+  justify-content: flex-start;
 }
 .navbar .container-fluid .navbar__logo {
   width: 150px;
@@ -107,7 +141,14 @@ body {
   border-radius: 100px;
   width: 90px;
 }
-.navbar .container-fluid .nav-link {
+.navbar .container-fluid .nav-item {
+  border-bottom: 2px solid transparent;
+  transition: border-color 3s ease; /* o all si querés animar más cosas */
+}
+.navbar .container-fluid .nav-item:hover {
+  border-bottom-color: black; /* o el color que quieras */
+}
+.navbar .container-fluid .nav-item .nav-link {
   color: #000000 !important;
   font-family: "Montserrat", sans-serif;
 }

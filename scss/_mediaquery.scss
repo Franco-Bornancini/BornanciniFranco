@@ -1,7 +1,9 @@
-@media (min-width: 348px) and (max-width: 760px){
+@media (max-width: 760px){
     //Navbar
     .container-fluid{
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
 
         .navbar__logo{
             width: 90px;
@@ -9,7 +11,23 @@
         }
 
         .navbarNav{
-            text-align: center;
+            height: 0;
+            overflow: hidden;
+            text-align: center;    
+            width: 100%;
+            transition: all .3s;
+            .navbar-nav{
+                height: 100%;
+            }
+        }
+
+        .input-check{
+            display: none;
+        }
+
+        .input-check:checked + .navbarNav{
+            
+            height: 100%;
         }
     }
     
@@ -29,6 +47,7 @@
         .content__prod{
             grid-area: prod;
             justify-items: center;
+            
 
             .card{
                 width: 18rem !important;
@@ -100,10 +119,14 @@
     }
     
 }
-@media (min-width: 761px) and (max-width: 990px){
+@media (min-width: 761px) and (max-width: 1079px){
     //Navbar
     .container-fluid{
-        flex-direction: column;
+        flex-direction:row;
+
+        .label_hamb, .input-check{
+            display: none;
+        }
 
         .navbar__logo{
             width: 90px;
@@ -112,6 +135,12 @@
 
         .navbarNav{
             text-align: center;
+            .navbar-nav{
+                flex-direction: row;
+                .nav-item{
+                    padding: 10px;
+                }
+            }
         }
     }
 
@@ -127,6 +156,15 @@
                     height: 5% !important;
                 }
             }
+        }
+    }
+}
+@media (min-width: 1080px){
+    .container-fluid{
+        flex-direction:row;
+
+        .label_hamb, .input-check{
+            display: none;
         }
     }
 }
