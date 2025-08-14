@@ -6,7 +6,7 @@
     
     .container-fluid{
         justify-content: flex-start;
-        
+        flex-direction:row;
         .navbar__logo{
             width: 150px;
             height: 50%;

@@ -44,17 +44,16 @@
             grid-area: info;
             margin: 10px;
         }
-        .content__prod{
-            grid-area: prod;
-            justify-items: center;
-            
 
-            .card{
-                width: 18rem !important;
-                
-                .card__img{
-                    height: 18rem;
-                }
+        .content__prod {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            justify-items: center;
+
+            .card {
+                width: 100% !important;
+                max-width: 18rem; 
             }
         }
     }
@@ -142,6 +141,23 @@
                 }
             }
         }
+    }
+
+    // Catering
+    .catering-content__info{
+        flex-direction: column !important;
+
+        .content-info{
+            text-align: center;
+            padding: 10px !important;
+        }
+
+        .content-img{
+            width: 90% !important;
+            height: 70% !important;
+            margin: 10px;
+        }
+
     }
 
     // Presale
