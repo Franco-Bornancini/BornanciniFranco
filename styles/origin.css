@@ -5,6 +5,18 @@ body {
   font-family: "Montserrat", sans-serif !important;
 }
 
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+[transition-style="in:wipe:down"] {
+  animation: 4.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+}
+
 @media (max-width: 760px) {
   .container-fluid {
     justify-content: space-between;
