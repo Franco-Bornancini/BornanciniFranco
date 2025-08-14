@@ -16,10 +16,10 @@
 
         .nav-item{
             border-bottom: 2px solid transparent;
-            transition: border-color 3s ease; /* o all si querés animar más cosas */
+            transition: border-color 3s ease;
 
             &:hover {
-                border-bottom-color: black; /* o el color que quieras */
+                border-bottom-color: black;
             }
             .nav-link{
                 color: #000000 !important;
