@@ -35,12 +35,20 @@
             text-align: center;
             border: none !important;
             background-color: rgb(252, 244, 230) !important;
-
+            position: relative;
+            transform-origin: center;
+            transition: transform 0.3s ease;
+            z-index: 1;
+            &:hover {
+                transform: scale(1.1);
+                z-index: 2;
+            }
             .card__img{
                 width: 99%;
                 height: 15rem;
                 margin: 2px;
                 border-radius: 5px;
+                
             }
         }
     }

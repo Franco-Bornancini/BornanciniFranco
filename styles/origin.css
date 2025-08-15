@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   background-color: #fffcf6 !important;
@@ -168,10 +167,10 @@ body {
 }
 .navbar .container-fluid .nav-item {
   border-bottom: 2px solid transparent;
-  transition: border-color 3s ease; /* o all si querés animar más cosas */
+  transition: border-color 3s ease;
 }
 .navbar .container-fluid .nav-item:hover {
-  border-bottom-color: black; /* o el color que quieras */
+  border-bottom-color: black;
 }
 .navbar .container-fluid .nav-item .nav-link {
   color: #000000 !important;
@@ -228,6 +227,14 @@ body {
   text-align: center;
   border: none !important;
   background-color: rgb(252, 244, 230) !important;
+  position: relative;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.content-index .content__prod .card:hover {
+  transform: scale(1.1);
+  z-index: 2;
 }
 .content-index .content__prod .card .card__img {
   width: 99%;
